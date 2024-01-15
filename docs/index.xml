@@ -1436,7 +1436,7 @@
 &lt;/ul>
 &lt;h4 id="31-download-the-binary-tar-tarball">3.1 Download the binary tar tarball&lt;/h4>
 &lt;p>You could download the binary tarball from the download page of ASF site like this:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># use the latest version, here is 1.0.0 for example&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># use the latest version, here is 1.2.0 for example&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://downloads.apache.org/incubator/hugegraph/&lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>version&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>/apache-hugegraph-incubating-&lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>version&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>.tar.gz
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tar zxf *hugegraph*.tar.gz
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
@@ -1465,7 +1465,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mvn package -DskipTests -ntp
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The execution log is as follows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>......
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>INFO&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span> Reactor Summary &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> hugegraph 1.0.0:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>INFO&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span> Reactor Summary &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> hugegraph 1.2.0:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>INFO&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>INFO&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span> hugegraph .......................................... SUCCESS &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span> 2.405 s&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>INFO&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span> hugegraph-core ..................................... SUCCESS &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span> 13.405 s&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
@@ -1511,7 +1511,7 @@
 &lt;p>The docker image of hugegraph is a convenience release to start hugegraph quickly, but not &lt;strong>official distribution&lt;/strong> artifacts. You can find more details from &lt;a href="https://infra.apache.org/release-distribution.html#dockerhub">ASF Release Distribution Policy&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Recommand to use &lt;code>release tag&lt;/code>(like &lt;code>1.0.0&lt;/code>) for the stable version. Use &lt;code>latest&lt;/code> tag to experience the newest functions in development.&lt;/p>
+&lt;p>Recommand to use &lt;code>release tag&lt;/code>(like &lt;code>1.2.0&lt;/code>) for the stable version. Use &lt;code>latest&lt;/code> tag to experience the newest functions in development.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/blockquote>
@@ -1519,8 +1519,8 @@
 &lt;p>&lt;code>HugeGraph-Tools&lt;/code> provides a command-line tool for one-click deployment, users can use this tool to quickly download, decompress, configure and start &lt;code>HugeGraphServer&lt;/code> and &lt;code>HugeGraph-Hubble&lt;/code> with one click.&lt;/p>
 &lt;p>Of course, you should download the tarball of &lt;code>HugeGraph-Toolchain&lt;/code> first.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># download toolchain binary package, it includes loader + tool + hubble&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># please check the latest version (e.g. here is 1.0.0)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0.tar.gz
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># please check the latest version (e.g. here is 1.2.0)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0.tar.gz
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tar zxf *hugegraph-*.tar.gz
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># enter the tool&amp;#39;s package&lt;/span>
@@ -1542,6 +1542,7 @@ after the service is stopped artificially, or when the service needs to be start
 &lt;p>If you need to access HugeGraphServer externally, please modify the &lt;code>restserver.url&lt;/code> configuration item of &lt;code>rest-server.properties&lt;/code>
 （default is &lt;code>http://127.0.0.1:8080&lt;/code>）, change to machine name or IP address.&lt;/p>
 &lt;p>Since the configuration (hugegraph.properties) and startup steps required by various backends are slightly different, the following will introduce the configuration and startup of each backend one by one.&lt;/p>
+&lt;p>If you want to use HugeGraph authentication mode, you should follow the &lt;a href="https://hugegraph.apache.org/docs/config/config-authentication/">Server Authentication Configuration&lt;/a> configuration before you start Server later.&lt;/p>
 &lt;h5 id="511-memory">5.1.1 Memory&lt;/h5>
 &lt;details>
 &lt;summary>Click to expand/collapse Memory configuration and startup methods&lt;/summary>
@@ -2120,6 +2121,14 @@ HugeGraph supports multi-user parallel operations. Users can enter Gremlin query
 &lt;li>&lt;a href="https://github.com/apache/incubator-hugegraph-computer/releases/tag/1.0.0">Computer Release Notes&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/apache/incubator-hugegraph-commons/releases/tag/1.0.0">Commons Release Notes&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: HugeGraph 1.2.0 Release Notes</title><link>/docs/changelog/hugegraph-1.2.0-release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/changelog/hugegraph-1.2.0-release-notes/</guid><description>
+&lt;h3 id="java-version-statement">Java version statement&lt;/h3>
+&lt;p>v1.2.0:&lt;/p>
+&lt;ol>
+&lt;li>hugegraph, hugegraph-toolchain, hugegraph-commons consider use Java 11, also compatible with Java 8 now.&lt;/li>
+&lt;li>hugegraph-computer required to use Java 11, &lt;strong>not compatible with Java 8 now!&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>v1.2.0 may be the last major version compatible with Java 8&lt;/strong>, compatibility with Java 8 will totally end in v1.5 when &lt;a href="https://github.com/apache/incubator-hugegraph/issues/2265">PD/Store&lt;/a> merged into master branch (Except for the &lt;code>java-client&lt;/code>).&lt;/p>
+&lt;p>In the future, we will gradually upgrade the java version, &lt;strong>Java 11&lt;/strong> -&amp;gt; &lt;strong>Java 17&lt;/strong> -&amp;gt; &lt;strong>Java 21&lt;/strong>.&lt;/p>
 &lt;h3 id="hugegraph">hugegraph&lt;/h3>
 &lt;h4 id="api-changes">API Changes&lt;/h4>
 &lt;ul>
@@ -4140,7 +4149,7 @@ multiple times to achieve deduplication. It should be noted that the properties 
 &lt;p>TinkerPop API allows open transactions, which are automatically closed when the request is completed (Gremlin Server forces close)&lt;/p>
 &lt;/blockquote></description></item><item><title>Docs: Download HugeGraph</title><link>/docs/download/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/download/download/</guid><description>
 &lt;h3 id="latest-version">Latest version&lt;/h3>
-&lt;p>The latest HugeGraph: &lt;strong>1.0.0&lt;/strong>, released on &lt;em>2023-02-22&lt;/em>(&lt;a href="/docs/quickstart/hugegraph-server/">how to build from source&lt;/a>).&lt;/p>
+&lt;p>The latest HugeGraph: &lt;strong>1.2.0&lt;/strong>, released on &lt;em>2023-12-28&lt;/em>(&lt;a href="/docs/quickstart/hugegraph-server/">how to build from source&lt;/a>).&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -4153,12 +4162,12 @@ multiple times to achieve deduplication. It should be noted that the properties 
 &lt;tr>
 &lt;td>HugeGraph-Server&lt;/td>
 &lt;td>The main program of HugeGraph&lt;/td>
-&lt;td>&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0.tar.gz">1.0.0&lt;/a>(&lt;a href="https://dlcdn.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0.tar.gz">alternate&lt;/a>)&lt;/td>
+&lt;td>&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0.tar.gz">1.2.0&lt;/a>(&lt;a href="https://dlcdn.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0.tar.gz">alternate&lt;/a>)&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>HugeGraph-Toolchain&lt;/td>
 &lt;td>A collection of tools for graph data import/export/backup, web visualization, etc.&lt;/td>
-&lt;td>&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0.tar.gz">1.0.0&lt;/a>(&lt;a href="https://dlcdn.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0.tar.gz">alternate&lt;/a>)&lt;/td>
+&lt;td>&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0.tar.gz">1.2.0&lt;/a>(&lt;a href="https://dlcdn.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0.tar.gz">alternate&lt;/a>)&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -4170,18 +4179,16 @@ multiple times to achieve deduplication. It should be noted that the properties 
 &lt;th>Release Date&lt;/th>
 &lt;th>server&lt;/th>
 &lt;th>toolchain&lt;/th>
-&lt;th>computer&lt;/th>
 &lt;th>Release Notes&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>1.0.0&lt;/td>
-&lt;td>2023-02-22&lt;/td>
-&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0.tar.gz">Binary&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
-&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0.tar.gz">Binary&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
-&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-computer-incubating-1.0.0.tar.gz">Binary&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-computer-incubating-1.0.0.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-computer-incubating-1.0.0.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
-&lt;td>&lt;a href="/docs/changelog/hugegraph-1.0.0-release-notes/">Release-Notes&lt;/a>&lt;/td>
+&lt;td>1.2.0&lt;/td>
+&lt;td>2023-12-28&lt;/td>
+&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0.tar.gz">Binary&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
+&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0.tar.gz">Binary&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
+&lt;td>&lt;a href="/docs/changelog/hugegraph-1.2.0-release-notes/">Release-Notes&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -4201,19 +4208,51 @@ multiple times to achieve deduplication. It should be noted that the properties 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>1.0.0&lt;/td>
-&lt;td>2023-02-22&lt;/td>
-&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0-src.tar.gz">Source&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0-src.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0-src.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
-&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0-src.tar.gz">Source&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0-src.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0-src.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
-&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-computer-incubating-1.0.0-src.tar.gz">Source&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-computer-incubating-1.0.0-src.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-computer-incubating-1.0.0-src.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
-&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-commons-incubating-1.0.0-src.tar.gz">Source&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-commons-incubating-1.0.0-src.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-commons-incubating-1.0.0-src.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
-&lt;td>&lt;a href="/docs/changelog/hugegraph-1.0.0-release-notes/">Release-Notes&lt;/a>&lt;/td>
+&lt;td>1.2.0&lt;/td>
+&lt;td>2023-12-28&lt;/td>
+&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0-src.tar.gz">Source&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0-src.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0-src.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
+&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0-src.tar.gz">Source&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0-src.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0-src.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
+&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-computer-incubating-1.2.0-src.tar.gz">Source&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-computer-incubating-1.2.0-src.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-computer-incubating-1.2.0-src.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
+&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-commons-incubating-1.2.0-src.tar.gz">Source&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-commons-incubating-1.2.0-src.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-commons-incubating-1.2.0-src.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
+&lt;td>&lt;a href="/docs/changelog/hugegraph-1.2.0-release-notes/">Release-Notes&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;hr>
 &lt;h3 id="outdated-versions-mapping">Outdated Versions Mapping&lt;/h3>
-&lt;p>For versions before 1.0.0 (i.e. non ASF versions), the HugeGraph community will no longer maintain them.&lt;/p>
+&lt;p>Apache versions.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Version&lt;/th>
+&lt;th>Release Date&lt;/th>
+&lt;th>server&lt;/th>
+&lt;th>toolchain&lt;/th>
+&lt;th>Release Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>1.2.0&lt;/td>
+&lt;td>2023-12-28&lt;/td>
+&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0.tar.gz">Binary&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-incubating-1.2.0.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
+&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0.tar.gz">Binary&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.2.0/apache-hugegraph-toolchain-incubating-1.2.0.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
+&lt;td>&lt;a href="/docs/changelog/hugegraph-1.2.0-release-notes/">Release-Notes&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>1.0.0&lt;/td>
+&lt;td>2023-02-22&lt;/td>
+&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0.tar.gz">Binary&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-incubating-1.0.0.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
+&lt;td>[&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0.tar.gz">Binary&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0.tar.gz.asc">Sign&lt;/a>] [&lt;a href="https://downloads.apache.org/incubator/hugegraph/1.0.0/apache-hugegraph-toolchain-incubating-1.0.0.tar.gz.sha512">SHA512&lt;/a>]&lt;/td>
+&lt;td>&lt;a href="/docs/changelog/hugegraph-1.0.0-release-notes/">Release-Notes&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Note:&lt;/p>
+&lt;ol>
+&lt;li>Please migrate to the latest release version as soon as possible. The community will no longer maintain old versions before &lt;code>1.0.0&lt;/code> (non ASF versions)&lt;/li>
+&lt;li>&lt;code>1.2.0&lt;/code> is the last major version compatible with &lt;code>Java8&lt;/code>, please migrate the runtime as soon as possible ≥ &lt;code>Java11&lt;/code>&lt;/li>
+&lt;/ol>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -6916,7 +6955,24 @@ roles. Below is the specific configuration process (requires service restart):&l
 &lt;h3 id="custom-user-authentication-system">Custom User Authentication System&lt;/h3>
 &lt;p>If you need to support a more flexible user system, you can customize the authenticator for extension.
 Simply implement the &lt;code>org.apache.hugegraph.auth.HugeAuthenticator&lt;/code> interface with your custom authenticator,
-and then modify the &lt;code>authenticator&lt;/code> configuration item in the configuration file to point to your implementation.&lt;/p></description></item><item><title>Docs: Gremlin-Console</title><link>/docs/clients/gremlin-console/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/clients/gremlin-console/</guid><description>
+and then modify the &lt;code>authenticator&lt;/code> configuration item in the configuration file to point to your implementation.&lt;/p>
+&lt;h3 id="switching-authentication-mode">Switching authentication mode&lt;/h3>
+&lt;p>After the authentication configuration completed, enter the &lt;strong>admin password&lt;/strong> on the &lt;strong>command line&lt;/strong> when executing &lt;code>init store. sh&lt;/code> for the first time. (For non-Docker mode)&lt;/p>
+&lt;p>If deployed based on Docker image or if HugeGraph has already been initialized and needs to be converted to authentication mode,
+relevant graph data needs to be deleted and HugeGraph needs to be restarted. If there is already business data in the diagram,
+it is temporarily &lt;strong>not possible&lt;/strong> to directly convert the authentication mode (improvements/support for this feature will be released in the next version. Could refer &lt;a href="https://github.com/apache/incubator-hugegraph/pull/2411">PR 2411&lt;/a>).&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># stop the hugeGraph firstly&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bin/stop-hugegraph.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># delete the store data (here we use the default path for rocksdb)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -rf rocksdb-data/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># init store again&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bin/init-store.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># start hugeGraph again&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bin/start-hugegraph.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Gremlin-Console</title><link>/docs/clients/gremlin-console/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/clients/gremlin-console/</guid><description>
 &lt;p>Gremlin-Console is an interactive client developed by TinkerPop. Users can use this client to perform various operations on Graph. There are two main usage modes:&lt;/p>
 &lt;ul>
 &lt;li>Stand-alone offline mode&lt;/li>
@@ -7361,9 +7417,15 @@ target directory. Copy the Jar package to the &lt;code>plugins&lt;/code> directo
 &lt;p>Note: this doc will be updated continuously.&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="verification">Verification&lt;/h2>
-&lt;p>When the internal temporary release and packaging work is completed, other community developers (especially PMC) need to participate in the &lt;a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+Release+Checklist">verification link&lt;/a>To ensure the &amp;ldquo;correctness + completeness&amp;rdquo; of someone&amp;rsquo;s published version, here requires &lt;strong>everyone&lt;/strong> to participate as much as possible, and then explain which items you have &lt;strong>checked&lt;/strong> in the subsequent &lt;strong>email reply&lt;/strong>. (The following are the core items)&lt;/p>
+&lt;p>When the internal temporary release and packaging work is completed, other community developers (
+especially PMC) need to participate in the &lt;a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+Release+Checklist">verification link&lt;/a>
+To ensure the &amp;ldquo;correctness + completeness&amp;rdquo; of someone&amp;rsquo;s published version, here requires **everyone
+** to participate as much as possible, and then explain which items you have &lt;strong>checked&lt;/strong> in the
+subsequent &lt;strong>email reply&lt;/strong>.(The following are the core items)&lt;/p>
 &lt;h4 id="1-prepare">1. prepare&lt;/h4>
-&lt;p>If there is no svn or gpg or wget environment locally, it is recommended to install it first (windows recommend using WSL2 environment, or at least &lt;code>git-bash&lt;/code>), also make sure to install java (recommended 11) and maven software&lt;/p>
+&lt;p>If there is no svn or gpg or wget environment locally, it is recommended to install it first
+(windows recommend using WSL2 environment, or at least &lt;code>git-bash&lt;/code>), also make sure to install java
+(recommended 11) and maven software&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># 1. install svn&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># ubuntu/debian&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt install subversion -y
@@ -7393,22 +7455,29 @@ target directory. Copy the Jar package to the &lt;code>plugins&lt;/code> directo
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># you can consider wget to download a single file, as follows (or consider using a proxy)&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://dist.apache.org/repos/dist/dev/incubator/hugegraph/1.x.x/apache-hugegraph-toolchain-incubating-1.x.x.tar.gz
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="2-check-hash-value">2. check hash value&lt;/h4>
-&lt;p>First you need to check the file integrity of the &lt;code>source + binary&lt;/code> package, Verify by &lt;code>shasum&lt;/code> to ensure that it is consistent with the hash value published on apache/github (Usually sha512), Here is the same as the last step of 0x02 inspection.&lt;/p>
+&lt;p>First you need to check the file integrity of the &lt;code>source + binary&lt;/code> package, Verify by &lt;code>shasum&lt;/code> to
+ensure that it is consistent with the hash value published on apache/GitHub (Usually sha512), Here
+is the same as the last step of 0x02 inspection.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>execute the following command:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">for&lt;/span> i in *.tar.gz&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">do&lt;/span> &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#000">$i&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> shasum -a &lt;span style="color:#0000cf;font-weight:bold">512&lt;/span> --check &lt;span style="color:#000">$i&lt;/span>.sha512&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">done&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="3-check-gpg-signature">3. check gpg signature&lt;/h4>
-&lt;p>This is to ensure that the published package is uploaded by a &lt;strong>reliable&lt;/strong> person. Assuming tom signs and uploads, others should download A’s &lt;strong>public key&lt;/strong> and then perform &lt;strong>signature confirmation&lt;/strong>. Related commands:&lt;/p>
+&lt;p>This is to ensure that the published package is uploaded by a &lt;strong>reliable&lt;/strong> person.
+Assuming tom signs and uploads,
+others should download A&amp;rsquo;s &lt;strong>public key&lt;/strong> and then perform &lt;strong>signature
+confirmation&lt;/strong>.&lt;/p>
+&lt;p>Related commands:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># 1. Download project trusted public key to local (required for the first time) &amp;amp; import&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl https://downloads.apache.org/incubator/hugegraph/KEYS &amp;gt; KEYS
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gpg --import KEYS
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># After importing, you can see the following output, which means that 3 user public keys have been imported&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># After importing, you can see the following output, which means that x user public keys have been imported&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gpg: /home/ubuntu/.gnupg/trustdb.gpg: trustdb created
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gpg: key BA7E78F8A81A885E: public key &lt;span style="color:#4e9a06">&amp;#34;imbajin (apache mail) &amp;lt;jin@apache.org&amp;gt;&amp;#34;&lt;/span> imported
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gpg: key 818108E7924549CC: public key &lt;span style="color:#4e9a06">&amp;#34;vaughn &amp;lt;vaughn@apache.org&amp;gt;&amp;#34;&lt;/span> imported
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gpg: key 28DCAED849C4180E: public key &lt;span style="color:#4e9a06">&amp;#34;coderzc (CODE SIGNING KEY) &amp;lt;zhaocong@apache.org&amp;gt;&amp;#34;&lt;/span> imported
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gpg: Total number processed: &lt;span style="color:#0000cf;font-weight:bold">3&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gpg: imported: &lt;span style="color:#0000cf;font-weight:bold">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gpg: Total number processed: x
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gpg: imported: x
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># 2. Trust release users (trust n username mentioned in voting mail, if more than one user, &lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># just repeat the steps in turn or use the script below)&lt;/span>
@@ -7435,23 +7504,28 @@ target directory. Copy the Jar package to the &lt;code>plugins&lt;/code> directo
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">for&lt;/span> i in *.tar.gz&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">do&lt;/span> &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#000">$i&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> gpg --verify &lt;span style="color:#000">$i&lt;/span>.asc &lt;span style="color:#000">$i&lt;/span> &lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">done&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>First confirm the overall integrity/consistency, and then confirm the specific content (&lt;strong>key&lt;/strong>)&lt;/p>
 &lt;h4 id="4-check-the-archive-contents">4. Check the archive contents&lt;/h4>
-&lt;p>Here it is divided into two aspects: source code package + binary package, The source code package is stricter, it can be said that the core part (Because it is longer,For a complete list refer to the official &lt;a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+Release+Checklist">Wiki&lt;/a>)&lt;/p>
-&lt;p>First of all, we need to download the package from the apache official &lt;code>release-candidate&lt;/code> URL to the local (URL: &lt;a href="https://dist.apache.org/repos/dist/dev/incubator/hugegraph/">click to jump&lt;/a>)&lt;/p>
+&lt;p>Here it is divided into two aspects: source code package + binary package, The source code package
+is stricter, it can be said that the core part (Because it is longer, For a complete list refer to
+the official &lt;a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+Release+Checklist">Wiki&lt;/a>)&lt;/p>
+&lt;p>First of all, we need to download the package from the apache official &lt;code>release-candidate&lt;/code> URL to
+the local (URL: &lt;a href="https://dist.apache.org/repos/dist/dev/incubator/hugegraph/">click to jump&lt;/a>)&lt;/p>
 &lt;h5 id="a-source-package">A. source package&lt;/h5>
 &lt;p>After decompressing &lt;code>*hugegraph*src.tar.gz&lt;/code>, Do the following checks:&lt;/p>
 &lt;ol>
 &lt;li>folders with &lt;code>incubating&lt;/code>, and no &lt;strong>empty&lt;/strong> files/folders&lt;/li>
 &lt;li>&lt;code>LICENSE&lt;/code> + &lt;code>NOTICE&lt;/code> + &lt;code>DISCLAIM&lt;/code> file exists and the content is normal&lt;/li>
 &lt;li>&lt;strong>does not exist&lt;/strong> binaries (without LICENSE)&lt;/li>
-&lt;li>The source code files all contain the standard &lt;code>ASF License&lt;/code> header (this could be done with the &lt;code>Maven-MAT&lt;/code> plugin)&lt;/li>
-&lt;li>Check whether the &lt;code>pom.xml&lt;/code> version number of each parent/child module is consistent (and meet expectations)&lt;/li>
+&lt;li>The source code files all contain the standard &lt;code>ASF License&lt;/code> header (this could be done with
+the &lt;code>Maven-MAT&lt;/code> plugin)&lt;/li>
+&lt;li>Check whether the &lt;code>pom.xml&lt;/code> version number of each parent/child module is consistent (and meet
+expectations)&lt;/li>
 &lt;li>Finally, make sure the source code works/compiles correctly&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># prefer to use/switch to java 11 for the following operations (compiling/running)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># prefer to use/switch to `java 11` for the following operations (compiling/running) (Note: `Computer` only supports `java &amp;gt;= 11`)&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># java --version&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># try to test in the Unix env to check if it works well&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mvn clean package -Dmaven.test.skip&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span> -Dcheckstyle.skip&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># try to compile in the Unix env to check if it works well&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mvn clean package -P stage -Dmaven.test.skip&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span> -Dcheckstyle.skip&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h5 id="b-binary-package">B. binary package&lt;/h5>
 &lt;p>After decompressing &lt;code>xxx-hugegraph.tar.gz&lt;/code>, perform the following checks:&lt;/p>
 &lt;ol>
@@ -7469,15 +7543,18 @@ target directory. Copy the Jar package to the &lt;code>plugins&lt;/code> directo
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bin/start-hubble.sh
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>more reference official website: https://hugegraph.apache.org/docs/quickstart
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Note:&lt;/strong> If a third-party dependency is introduced in the binary package, you need to update the LICENSE and add the third-party dependent LICENSE; if the third-party dependent LICENSE is Apache 2.0, and the corresponding project contains NOTICE, you also need to update Our NOTICE file&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Note:&lt;/strong> If a third-party dependency is introduced in the binary package, you need to update the
+LICENSE and add the third-party dependent LICENSE; if the third-party dependent LICENSE is Apache
+2.0, and the corresponding project contains NOTICE, you also need to update Our NOTICE file&lt;/p>
 &lt;h4 id="5-check-the-official-website-and-github-and-other-pages">5. Check the official website and GitHub and other pages&lt;/h4>
 &lt;ol>
-&lt;li>Make sure that the official website at least meets &lt;a href="https://whimsy.apache.org/pods/project/hugegraph">apache website check&lt;/a>, and no circular links etc.&lt;/li>
+&lt;li>Make sure that the official website at least meets &lt;a href="https://whimsy.apache.org/pods/project/hugegraph">apache website check&lt;/a>,
+and no circular links, etc.&lt;/li>
 &lt;li>Update &lt;strong>download link&lt;/strong> and release notes updated&lt;/li>
 &lt;li>&amp;hellip;&lt;/li>
 &lt;/ol>
 &lt;h2 id="mail-template">Mail Template&lt;/h2>
-&lt;p>After the check &amp;amp; test, you should reply the mail with the following content: (normal devs &amp;amp; PMC)&lt;/p>
+&lt;p>After the check &amp;amp; test, you should reply to the mail with the following content: (normal devs &amp;amp; PMC)&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>[] +1 approve
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[] +0 no opinion
@@ -7485,27 +7562,27 @@ target directory. Copy the Jar package to the &lt;code>plugins&lt;/code> directo
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[] -1 disapprove with the reason
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>+1 (non-binding)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>I checked:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>1.Download link/tag in mail are valid
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>2.Checksum and GPG signatures are OK
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>3.LICENSE &lt;span style="color:#a40000">&amp;amp;&lt;/span> NOTICE &lt;span style="color:#a40000">&amp;amp;&lt;/span> DISCLAIMER are exist
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>4.Build successfully on XX OS &lt;span style="color:#a40000">&amp;amp;&lt;/span> Version XX
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>5.No unexpected binary files
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>6.Date is right in the NOTICE file
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>7.Compile from source is fine under JavaXX
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>8.No empty file &lt;span style="color:#a40000">&amp;amp;&lt;/span> directory found
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">1.&lt;/span> Download link/tag in mail are valid
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">2.&lt;/span> Checksum and GPG signatures are OK
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">3.&lt;/span> LICENSE &lt;span style="color:#a40000">&amp;amp;&lt;/span> NOTICE &lt;span style="color:#a40000">&amp;amp;&lt;/span> DISCLAIMER are exist
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">4.&lt;/span> Build successfully on XX OS &lt;span style="color:#a40000">&amp;amp;&lt;/span> Version XX
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">5.&lt;/span> No unexpected binary files
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">6.&lt;/span> Date is right in the NOTICE file
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">7.&lt;/span> Compile from source is fine under JavaXX
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">8.&lt;/span> No empty file &lt;span style="color:#a40000">&amp;amp;&lt;/span> directory found
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">9.&lt;/span> Test running XXX service OK
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">10.&lt;/span> ....
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and the PMC members should reply with &lt;code>binding&lt;/code>, it&amp;rsquo;s important for summary the valid votes:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>+1 (binding)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>I checked:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>1.Download link/tag in mail are valid
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>2.Checksum and GPG signatures are OK
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>3.LICENSE &lt;span style="color:#a40000">&amp;amp;&lt;/span> NOTICE &lt;span style="color:#a40000">&amp;amp;&lt;/span> DISCLAIMER are exist
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>4.Build successfully on XX OS &lt;span style="color:#a40000">&amp;amp;&lt;/span> Version XX
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>5.No unexpected binary files
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>6.Date is right in the NOTICE file
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>7.Compile from source is fine under JavaXX
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>8.No empty file &lt;span style="color:#a40000">&amp;amp;&lt;/span> directory found
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">1.&lt;/span> Download link/tag in mail are valid
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">2.&lt;/span> Checksum and GPG signatures are OK
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">3.&lt;/span> LICENSE &lt;span style="color:#a40000">&amp;amp;&lt;/span> NOTICE &lt;span style="color:#a40000">&amp;amp;&lt;/span> DISCLAIMER are exist
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">4.&lt;/span> Build successfully on XX OS &lt;span style="color:#a40000">&amp;amp;&lt;/span> Version XX
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">5.&lt;/span> No unexpected binary files
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">6.&lt;/span> Date is right in the NOTICE file
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">7.&lt;/span> Compile from source is fine under JavaXX
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">8.&lt;/span> No empty file &lt;span style="color:#a40000">&amp;amp;&lt;/span> directory found
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">9.&lt;/span> Test running XX process OK
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">10.&lt;/span> ....
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: VertexLabel API</title><link>/docs/clients/restful-api/vertexlabel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/clients/restful-api/vertexlabel/</guid><description>
@@ -10630,10 +10707,14 @@ Implement a class inherited from &lt;code>Formatter&lt;/code> in the directory, 
 &lt;li>You can output the results to HDFS or HugeGraph, or any other system.&lt;/li>
 &lt;li>Easy to develop a new algorithm. You just need to focus on a vertex only processing just like as in a single server, without worrying about message transfer and memory/storage management.&lt;/li>
 &lt;/ul>
-&lt;h2 id="2-get-started">2 Get Started&lt;/h2>
-&lt;h3 id="21-run-pagerank-algorithm-locally">2.1 Run PageRank algorithm locally&lt;/h3>
+&lt;h2 id="2-dependency-for-buildingrunning">2 Dependency for Building/Running&lt;/h2>
+&lt;h3 id="21-install-java-11-jdk-11">2.1 Install Java 11 (JDK 11)&lt;/h3>
+&lt;p>&lt;strong>Must&lt;/strong> use ≥ &lt;code>Java 11&lt;/code> to run &lt;code>Computer&lt;/code>, and configure by yourself.&lt;/p>
+&lt;p>&lt;strong>Be sure to execute the &lt;code>java -version&lt;/code> command to check the jdk version before reading&lt;/strong>&lt;/p>
+&lt;h2 id="3-get-started">3 Get Started&lt;/h2>
+&lt;h3 id="31-run-pagerank-algorithm-locally">3.1 Run PageRank algorithm locally&lt;/h3>
 &lt;blockquote>
-&lt;p>To run algorithm with HugeGraph-Computer, you need to install 64-bit Java 11 or later versions.&lt;/p>
+&lt;p>To run algorithm with HugeGraph-Computer, you need to install Java 11 or later versions.&lt;/p>
 &lt;p>You also need to deploy HugeGraph-Server and &lt;a href="https://etcd.io/docs/v3.5/quickstart/">Etcd&lt;/a>.&lt;/p>
 &lt;/blockquote>
 &lt;p>There are two ways to get HugeGraph-Computer:&lt;/p>
@@ -10641,56 +10722,56 @@ Implement a class inherited from &lt;code>Formatter&lt;/code> in the directory, 
 &lt;li>Download the compiled tarball&lt;/li>
 &lt;li>Clone source code then compile and package&lt;/li>
 &lt;/ul>
-&lt;h4 id="21-download-the-compiled-archive">2.1 Download the compiled archive&lt;/h4>
+&lt;h4 id="311-download-the-compiled-archive">3.1.1 Download the compiled archive&lt;/h4>
 &lt;p>Download the latest version of the HugeGraph-Computer release package:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>wget https://downloads.apache.org/incubator/hugegraph/&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">version&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>/apache-hugegraph-computer-incubating-&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">version&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>.tar.gz
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tar zxvf apache-hugegraph-computer-incubating-&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">version&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>.tar.gz -C hugegraph-computer
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="22-clone-source-code-to-compile-and-package">2.2 Clone source code to compile and package&lt;/h4>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="312-clone-source-code-to-compile-and-package">3.1.2 Clone source code to compile and package&lt;/h4>
 &lt;p>Clone the latest version of HugeGraph-Computer source package:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ git clone https://github.com/apache/hugegraph-computer.git
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Compile and generate tar package:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> hugegraph-computer
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mvn clean package -DskipTests
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="23-start-master-node">2.3 Start master node&lt;/h4>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="313-start-master-node">3.1.3 Start master node&lt;/h4>
 &lt;blockquote>
 &lt;p>You can use &lt;code>-c&lt;/code> parameter specify the configuration file, more computer config please see:&lt;a href="/docs/config/config-computer#computer-config-options">Computer Config Options&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> hugegraph-computer
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bin/start-computer.sh -d &lt;span style="color:#204a87">local&lt;/span> -r master
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="24-start-worker-node">2.4 Start worker node&lt;/h4>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="314-start-worker-node">3.1.4 Start worker node&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>bin/start-computer.sh -d &lt;span style="color:#204a87">local&lt;/span> -r worker
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="25-query-algorithm-results">2.5 Query algorithm results&lt;/h4>
-&lt;p>2.5.1 Enable &lt;code>OLAP&lt;/code> index query for server&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="315-query-algorithm-results">3.1.5 Query algorithm results&lt;/h4>
+&lt;p>3.1.5.1 Enable &lt;code>OLAP&lt;/code> index query for server&lt;/p>
 &lt;p>If OLAP index is not enabled, it needs to enable, more reference: &lt;a href="/docs/clients/restful-api/graphs/#634-modify-graphs-read-mode-this-operation-requires-administrator-privileges">modify-graphs-read-mode&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-http" data-lang="http">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">PUT http://localhost:8080/graphs/hugegraph/graph_read_mode
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">&amp;#34;ALL&amp;#34;
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.5.2 Query &lt;code>page_rank&lt;/code> property value:&lt;/p>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>3.1.5.2 Query &lt;code>page_rank&lt;/code> property value:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>curl &lt;span style="color:#4e9a06">&amp;#34;http://localhost:8080/graphs/hugegraph/graph/vertices?page&amp;amp;limit=3&amp;#34;&lt;/span> &lt;span style="color:#000;font-weight:bold">|&lt;/span> gunzip
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="22-run-pagerank-algorithm-in-kubernetes">2.2 Run PageRank algorithm in Kubernetes&lt;/h3>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="32-run-pagerank-algorithm-in-kubernetes">3.2 Run PageRank algorithm in Kubernetes&lt;/h3>
 &lt;blockquote>
 &lt;p>To run algorithm with HugeGraph-Computer you need to deploy HugeGraph-Server first&lt;/p>
 &lt;/blockquote>
-&lt;h4 id="221-install-hugegraph-computer-crd">2.2.1 Install HugeGraph-Computer CRD&lt;/h4>
+&lt;h4 id="321-install-hugegraph-computer-crd">3.2.1 Install HugeGraph-Computer CRD&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Kubernetes version &amp;gt;= v1.16&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>kubectl apply -f https://raw.githubusercontent.com/apache/hugegraph-computer/master/computer-k8s-operator/manifest/hugegraph-computer-crd.v1.yaml
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Kubernetes version &amp;lt; v1.16&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>kubectl apply -f https://raw.githubusercontent.com/apache/hugegraph-computer/master/computer-k8s-operator/manifest/hugegraph-computer-crd.v1beta1.yaml
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="222-show-crd">2.2.2 Show CRD&lt;/h4>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="322-show-crd">3.2.2 Show CRD&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>kubectl get crd
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>NAME CREATED AT
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugegraphcomputerjobs.hugegraph.apache.org 2021-09-16T08:01:08Z
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="223-install-hugegraph-computer-operatoretcd-server">2.2.3 Install hugegraph-computer-operator&amp;amp;etcd-server&lt;/h4>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="323-install-hugegraph-computer-operatoretcd-server">3.2.3 Install hugegraph-computer-operator&amp;amp;etcd-server&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>kubectl apply -f https://raw.githubusercontent.com/apache/hugegraph-computer/master/computer-k8s-operator/manifest/hugegraph-computer-operator.yaml
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="224-wait-for-hugegraph-computer-operatoretcd-server-deployment-to-complete">2.2.4 Wait for hugegraph-computer-operator&amp;amp;etcd-server deployment to complete&lt;/h4>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="324-wait-for-hugegraph-computer-operatoretcd-server-deployment-to-complete">3.2.4 Wait for hugegraph-computer-operator&amp;amp;etcd-server deployment to complete&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>kubectl get pod -n hugegraph-computer-operator-system
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>NAME READY STATUS RESTARTS AGE
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugegraph-computer-operator-controller-manager-58c5545949-jqvzl 1/1 Running &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span> 15h
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugegraph-computer-operator-etcd-28lm67jxk5 1/1 Running &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span> 15h
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="225-submit-job">2.2.5 Submit job&lt;/h4>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="325-submit-job">3.2.5 Submit job&lt;/h4>
 &lt;blockquote>
 &lt;p>More computer crd please see: &lt;a href="/docs/config/config-computer#hugegraph-computer-crd">Computer CRD&lt;/a>&lt;/p>
 &lt;p>More computer config please see: &lt;a href="/docs/config/config-computer#computer-config-options">Computer Config Options&lt;/a>&lt;/p>
@@ -10716,12 +10797,12 @@ Implement a class inherited from &lt;code>Formatter&lt;/code> in the directory, 
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#204a87;font-weight:bold">hugegraph.url&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">http://${hugegraph-server-host}:${hugegraph-server-port}&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic"># hugegraph server url&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#204a87;font-weight:bold">hugegraph.name&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">hugegraph&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic"># hugegraph graph name&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f8f8f8;text-decoration:underline">&lt;/span>&lt;span style="color:#000">EOF&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="226-show-job">2.2.6 Show job&lt;/h4>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="326-show-job">3.2.6 Show job&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>kubectl get hcjob/pagerank-sample -n hugegraph-computer-operator-system
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>NAME JOBID JOBSTATUS
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pagerank-sample pagerank-sample RUNNING
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="227-show-log-of-nodes">2.2.7 Show log of nodes&lt;/h4>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="327-show-log-of-nodes">3.2.7 Show log of nodes&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Show the master log&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>kubectl logs -l &lt;span style="color:#000">component&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>pagerank-sample-master -n hugegraph-computer-operator-system
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
@@ -10731,15 +10812,15 @@ Implement a class inherited from &lt;code>Formatter&lt;/code> in the directory, 
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Show diagnostic log of a job&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># NOTE: diagnostic log exist only when the job fails, and it will only be saved for one hour.&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>kubectl get event --field-selector &lt;span style="color:#000">reason&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>ComputerJobFailed --field-selector involvedObject.name&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>pagerank-sample -n hugegraph-computer-operator-system
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="228-show-success-event-of-a-job">2.2.8 Show success event of a job&lt;/h4>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="328-show-success-event-of-a-job">3.2.8 Show success event of a job&lt;/h4>
 &lt;blockquote>
 &lt;p>NOTE: it will only be saved for one hour&lt;/p>
 &lt;/blockquote>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>kubectl get event --field-selector &lt;span style="color:#000">reason&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>ComputerJobSucceed --field-selector involvedObject.name&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>pagerank-sample -n hugegraph-computer-operator-system
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="229-query-algorithm-results">2.2.9 Query algorithm results&lt;/h4>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="329-query-algorithm-results">3.2.9 Query algorithm results&lt;/h4>
 &lt;p>If the output to &lt;code>Hugegraph-Server&lt;/code> is consistent with Locally, if output to &lt;code>HDFS&lt;/code>, please check the result file in the directory of &lt;code>/hugegraph-computer/results/{jobId}&lt;/code> directory.&lt;/p>
-&lt;h2 id="3-built-in-algorithms-document">3 Built-In algorithms document&lt;/h2>
-&lt;h3 id="31-supported-algorithms-list">3.1 Supported algorithms list:&lt;/h3>
+&lt;h2 id="4-built-in-algorithms-document">4 Built-In algorithms document&lt;/h2>
+&lt;h3 id="41-supported-algorithms-list">4.1 Supported algorithms list:&lt;/h3>
 &lt;h6 id="centrality-algorithm">Centrality Algorithm:&lt;/h6>
 &lt;ul>
 &lt;li>PageRank&lt;/li>
@@ -10761,11 +10842,11 @@ Implement a class inherited from &lt;code>Formatter&lt;/code> in the directory, 
 &lt;li>RingsDetectionWithFilter&lt;/li>
 &lt;/ul>
 &lt;p>More algorithms please see: &lt;a href="https://github.com/apache/hugegraph-computer/tree/master/computer-algorithm/src/main/java/org/apache/hugegraph/computer/algorithm">Built-In algorithms&lt;/a>&lt;/p>
-&lt;h3 id="32-algorithm-describe">3.2 Algorithm describe&lt;/h3>
+&lt;h3 id="42-algorithm-describe">4.2 Algorithm describe&lt;/h3>
 &lt;p>TODO&lt;/p>
-&lt;h2 id="4-algorithm-development-guide">4 Algorithm development guide&lt;/h2>
+&lt;h2 id="5-algorithm-development-guide">5 Algorithm development guide&lt;/h2>
 &lt;p>TODO&lt;/p>
-&lt;h2 id="5-note">5 Note&lt;/h2>
+&lt;h2 id="6-note">6 Note&lt;/h2>
 &lt;ul>
 &lt;li>If some classes under computer-k8s cannot be found, you need to execute &lt;code>mvn compile&lt;/code> in advance to generate corresponding classes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Rebuild API</title><link>/docs/clients/restful-api/rebuild/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/clients/restful-api/rebuild/</guid><description>
